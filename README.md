@@ -1,5 +1,5 @@
-# IT Academy - Data Science with Python
-## Sprint 13: Supervised Classification
+# [IT Academy - Data Science with Python](https://www.barcelonactiva.cat/es/itacademy)
+## [S13 T01: Supervised Classification](https://github.com/jesussantana/Supervised-Classification/blob/main/notebooks/S13_T01_Supervised_Classification.ipynb)
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)  
