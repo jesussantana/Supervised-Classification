@@ -1,6 +1,10 @@
 # Correlation between numeric columns
 # ==============================================================================
-def tidy_corr_matrix(corr_mat):
+
+import numpy as np
+
+
+def corr_matrix(corr_mat):
     
     # Function to convert a pandas correlation matrix to tidy format
     

@@ -1,6 +1,8 @@
 # AutoML Classifier
+# ==============================================================================
 # Build an AutoML library in Python, which will perform actions automatically
 # ==============================================================================
+
 from sklearn.compose import ColumnTransformer, make_column_selector
 
 from sklearn.impute import SimpleImputer

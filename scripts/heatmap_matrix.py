@@ -6,7 +6,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # ==============================================================================
-def Correlations():
+
+
+def Correlations(df):
     fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(15, 10))
     corr_matrix = df.select_dtypes(include=['float64', 'int']).corr(method='pearson')
     sns.heatmap(
