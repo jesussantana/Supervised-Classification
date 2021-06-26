@@ -13,6 +13,8 @@ from sklearn.preprocessing import MinMaxScaler
 
 from sklearn.pipeline import Pipeline
 
+from sklearn.model_selection import RandomizedSearchCV
+
 from sklearn.feature_selection import RFECV, SelectKBest, f_regression, f_classif 
 
 from sklearn.linear_model import LinearRegression, Ridge, ElasticNet, SGDRegressor, LogisticRegression
@@ -34,7 +36,10 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 
 # ==============================================================================
 
+# AutoML Classifier
+
 class AutoMLClassifier:
+    
   def __init__(self, scoring_function = 'balanced_accuracy', n_iter = 50):
     self.scoring_function = scoring_function
     self.n_iter = n_iter
@@ -68,7 +73,6 @@ class AutoMLClassifier:
       ('numerical', num_pipeline, make_column_selector(dtype_exclude=['object','category','bool'])),
       ('categorical', cat_pipeline, make_column_selector(dtype_include=['object','category','bool']))
     ])
-
 
 
     # Define the ML pipeline
