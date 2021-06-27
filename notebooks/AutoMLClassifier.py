@@ -155,7 +155,7 @@ class AutoMLClassifier:
       n_iter=self.n_iter,
       scoring = self.scoring_function, 
       n_jobs = -1, 
-      random_state = 0, 
+      random_state = 6858, 
       verbose = 3,
       cv = 5
     )
